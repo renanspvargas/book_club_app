@@ -6,7 +6,22 @@ class OurLogin extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Row(),
+      body: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Expanded(
+            child: ListView(
+              padding: const EdgeInsets.all(20),
+              children: [
+                Padding(
+                  padding: const EdgeInsets.all(40),
+                  child: Image.asset('assets/logo.png'),
+                )
+              ],
+            ),
+          ),
+        ],
+      ),
     );
   }
 }
