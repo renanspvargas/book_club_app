@@ -1,3 +1,4 @@
+import 'package:bookclubapp/screens/login/local_widgets/login_form.dart';
 import 'package:flutter/material.dart';
 
 class OurLogin extends StatelessWidget {
@@ -16,7 +17,9 @@ class OurLogin extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(40),
                   child: Image.asset('assets/logo.png'),
-                )
+                ),
+                const SizedBox(height: 20),
+                const OurLoginForm(),
               ],
             ),
           ),
