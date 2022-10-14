@@ -30,6 +30,13 @@ class OurLoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          TextFormField(
+            decoration: const InputDecoration(
+              prefixIcon: Icon(Icons.lock_outline),
+              hintText: "Password",
+            ),
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
