@@ -10,6 +10,11 @@ class OurTheme {
       canvasColor: _lightGreen,
       primaryColor: _lightGrey,
       secondaryHeaderColor: _darkerGrey,
+      elevatedButtonTheme: ElevatedButtonThemeData(
+        style: ButtonStyle(
+          backgroundColor: MaterialStateProperty.all(_lightGrey),
+        ),
+      ),
     );
   }
 }
