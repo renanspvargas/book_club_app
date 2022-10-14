@@ -1,3 +1,4 @@
+import 'package:bookclubapp/screens/signup/signup.dart';
 import 'package:bookclubapp/utils/theme.dart';
 import 'package:bookclubapp/widgets/our_container.dart';
 import 'package:flutter/material.dart';
@@ -54,7 +55,13 @@ class OurLoginForm extends StatelessWidget {
             ),
           ),
           TextButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.of(context).push(
+                MaterialPageRoute(
+                  builder: (context) => const OurSignUp(),
+                ),
+              );
+            },
             child: const Text(
               "Don't have and account? Sign up here",
               style: TextStyle(color: OurTheme.darkerGrey),
