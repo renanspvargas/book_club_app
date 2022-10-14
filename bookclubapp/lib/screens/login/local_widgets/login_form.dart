@@ -23,6 +23,13 @@ class OurLoginForm extends StatelessWidget {
               ),
             ),
           ),
+          TextFormField(
+            decoration: const InputDecoration(
+              prefixIcon: Icon(Icons.alternate_email),
+              hintText: "Email",
+            ),
+          ),
+          const SizedBox(height: 20),
         ],
       ),
     );
