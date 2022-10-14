@@ -1,3 +1,4 @@
+import 'package:bookclubapp/widgets/our_container.dart';
 import 'package:flutter/material.dart';
 
 class OurLoginForm extends StatelessWidget {
@@ -5,6 +6,25 @@ class OurLoginForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return OurContainter(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              vertical: 20,
+              horizontal: 8,
+            ),
+            child: Text(
+              "Log in",
+              style: TextStyle(
+                color: Theme.of(context).secondaryHeaderColor,
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+          ),
+        ],
+      ),
+    );
   }
 }
