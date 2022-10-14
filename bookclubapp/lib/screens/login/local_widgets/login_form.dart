@@ -37,6 +37,21 @@ class OurLoginForm extends StatelessWidget {
             ),
           ),
           const SizedBox(height: 20),
+          SizedBox(
+            width: MediaQuery.of(context).size.width * 0.7,
+            height: 35,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text(
+                "Log in",
+                style: TextStyle(
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold,
+                  fontSize: 18,
+                ),
+              ),
+            ),
+          ),
         ],
       ),
     );
