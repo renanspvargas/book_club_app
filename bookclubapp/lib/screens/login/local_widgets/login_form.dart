@@ -1,3 +1,4 @@
+import 'package:bookclubapp/utils/theme.dart';
 import 'package:bookclubapp/widgets/our_container.dart';
 import 'package:flutter/material.dart';
 
@@ -50,6 +51,13 @@ class OurLoginForm extends StatelessWidget {
                   fontSize: 18,
                 ),
               ),
+            ),
+          ),
+          TextButton(
+            onPressed: () {},
+            child: const Text(
+              "Don't have and account? Sign up here",
+              style: TextStyle(color: OurTheme.darkerGrey),
             ),
           ),
         ],
