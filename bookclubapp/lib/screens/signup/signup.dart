@@ -13,10 +13,13 @@ class OurSignUp extends StatelessWidget {
           Expanded(
             child: ListView(
               padding: const EdgeInsets.all(20),
-              children: const [
-                BackButton(),
-                SizedBox(height: 20),
-                OurSignUpForm(),
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: const [BackButton()],
+                ),
+                const SizedBox(height: 40),
+                const OurSignUpForm(),
               ],
             ),
           ),
