@@ -37,6 +37,7 @@ class OurLoginForm extends StatelessWidget {
               prefixIcon: Icon(Icons.lock_outline),
               hintText: "Password",
             ),
+            obscureText: true,
           ),
           const SizedBox(height: 20),
           SizedBox(
